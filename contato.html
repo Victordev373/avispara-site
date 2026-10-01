@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contato e orçamento | Tapajós Alimentos, Santarém-PA</title>
+<meta name="description" content="Fale com o comercial da Tapajós Alimentos, de Santarém-PA, e solicite um orçamento de frango AvisPará para o seu estabelecimento.">
+<link rel="canonical" href="https://www.exemplo.com.br/contato.html">
+<meta name="theme-color" content="#ED1B23">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Tapajós Alimentos">
+<meta property="og:title" content="Contato e orçamento | Tapajós Alimentos">
+<meta property="og:description" content="Solicite um orçamento de frango AvisPará para o seu estabelecimento.">
+<meta property="og:image" content="assets/img/logo-avispara.png">
+<link rel="icon" href="assets/img/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/estilo.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="header">
+  <div class="wrap header-in">
+    <a class="logo" href="index.html" aria-label="Tapajós Alimentos, página inicial">
+      <img src="assets/img/logo-avispara.webp" alt="" width="44" height="44">
+      <span class="logo-txt"><b>Tapajós Alimentos</b><span>Frango AvisPará · Santarém-PA</span></span>
+    </a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <nav class="nav" id="menu" aria-label="Navegação principal">
+      <a href="index.html">Início</a>
+      <a href="empresa.html">A empresa</a>
+      <a href="produtos.html">Produtos</a>
+      <a href="contato.html" aria-current="page">Contato</a>
+      <a class="btn btn-primary btn-sm" href="tel:+5593991637443">Ligar agora</a>
+    </nav>
+  </div>
+</header>
+
+<main id="conteudo">
+
+  <section class="pagehead">
+    <div class="wrap">
+      <p class="crumb"><a href="index.html">Início</a><span>/</span>Contato e orçamento</p>
+      <h1 class="display">Diga o que o seu negócio precisa.</h1>
+      <p class="lead" style="margin-top:22px">Informe o produto, o volume aproximado e a sua cidade. O comercial responde com disponibilidade, apresentações e condições de atendimento.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap contact-grid">
+
+      <div>
+        <h2 class="display" style="font-size:clamp(1.6rem,2.8vw,2.1rem);margin-bottom:8px">Solicitar orçamento</h2>
+        <p class="small" style="margin-bottom:26px">Campos marcados com * são obrigatórios.</p>
+
+        <form id="form-orcamento" novalidate>
+          <div class="form-grid">
+
+            <div class="field field-full">
+              <label for="nome">Nome *</label>
+              <input type="text" id="nome" name="nome" required autocomplete="name" aria-describedby="err-nome">
+              <span class="err" id="err-nome" role="alert"></span>
+            </div>
+
+            <div class="field">
+              <label for="empresa">Empresa <span class="hint">(opcional)</span></label>
+              <input type="text" id="empresa" name="empresa" autocomplete="organization">
+              <span class="err" role="alert"></span>
+            </div>
+
+            <div class="field">
+              <label for="cidade">Cidade e estado *</label>
+              <input type="text" id="cidade" name="cidade" required placeholder="Ex.: Santarém-PA" autocomplete="address-level2" aria-describedby="err-cidade">
+              <span class="err" id="err-cidade" role="alert"></span>
+            </div>
+
+            <div class="field">
+              <label for="telefone">Telefone <span class="hint">(com DDD)</span></label>
+              <input type="tel" id="telefone" name="telefone" inputmode="tel" placeholder="(93) 90000-0000" autocomplete="tel">
+              <span class="err" role="alert"></span>
+            </div>
+
+            <div class="field">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" placeholder="voce@empresa.com.br" autocomplete="email">
+              <span class="err" role="alert"></span>
+            </div>
+
+            <div class="field field-full">
+              <label for="produto">Produto de interesse <span class="hint">(opcional)</span></label>
+              <select id="produto" name="produto">
+                <option value="">Ainda não sei / quero conversar</option>
+                <option value="frango-congelado">Frango congelado, caixa de 20 kg</option>
+                <option value="galinha-pesada">Galinha pesada, 20 kg</option>
+                <option value="frango-resfriado">Frango resfriado</option>
+                <option value="outro">Outro produto</option>
+              </select>
+              <span class="err" role="alert"></span>
+            </div>
+
+            <div class="field field-full">
+              <label for="mensagem">Mensagem *</label>
+              <textarea id="mensagem" name="mensagem" required minlength="10"
+                        placeholder="Conte o volume aproximado por semana ou por mês, o calibre que você usa e para quando precisa."
+                        aria-describedby="err-mensagem"></textarea>
+              <span class="err" id="err-mensagem" role="alert"></span>
+            </div>
+
+          </div>
+
+          <p class="form-note">Ao enviar, seus dados são usados apenas para o comercial responder a esta solicitação. Não há envio de newsletter e os dados não são repassados a terceiros.</p>
+
+          <div class="actions" style="margin-top:22px">
+            <button class="btn btn-primary" type="submit">Enviar solicitação</button>
+            <a class="btn btn-line" href="tel:+5593991637443">Prefiro ligar</a>
+          </div>
+
+          <p class="status" id="status-envio" role="status" aria-live="polite"></p>
+        </form>
+
+        <p class="note">Aviso ao responsável pelo site: o envio automático do formulário ainda não está ligado a nenhum serviço. Enquanto o endereço de destino não for configurado em <code>assets/js/site.js</code>, o formulário valida os campos e avisa o visitante de que o envio não está disponível, sem jamais exibir uma falsa confirmação.</p>
+      </div>
+
+      <aside>
+        <div class="contact-box">
+          <h3>Falar direto</h3>
+          <ul class="contact-list">
+            <li>
+              <a href="tel:+5593991637443">(93) 99163-7443</a>
+              <small>Telefone comercial divulgado em diretórios públicos</small>
+            </li>
+            <li>
+              Diamantino, Santarém-PA
+              <small>Bairro da sede administrativa</small>
+            </li>
+            <li>
+              Tapajós Alimentos Ltda.
+              <small>CNPJ 06.153.245/0001-35</small>
+            </li>
+          </ul>
+        </div>
+
+        <div class="contact-box" style="margin-top:20px">
+          <h3>Atendimento por região</h3>
+          <p style="color:var(--muted)">A empresa fica em Santarém e tem unidades registradas também em Belterra. A área de entrega não está publicada, então informe sua cidade na solicitação e o comercial confirma se há atendimento.</p>
+        </div>
+
+        <div class="contact-box" style="margin-top:20px">
+          <h3>O que agiliza a resposta</h3>
+          <ul class="contact-list">
+            <li>Produto e calibre<small>Ex.: frango congelado, 8 aves por caixa</small></li>
+            <li>Volume<small>Quantas caixas por semana ou por mês</small></li>
+            <li>Tipo de estabelecimento<small>Mercado, açougue, restaurante, distribuidora</small></li>
+            <li>Prazo<small>Para quando você precisa da primeira entrega</small></li>
+          </ul>
+        </div>
+      </aside>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="index.html" aria-label="Tapajós Alimentos, página inicial">
+          <img src="assets/img/logo-avispara.webp" alt="" width="44" height="44">
+          <span class="logo-txt"><b>Tapajós Alimentos</b><span>Frango AvisPará</span></span>
+        </a>
+        <p style="margin-top:18px;max-width:34ch">Criação, abate e venda de frangos resfriados e congelados no oeste do Pará.</p>
+      </div>
+      <div>
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="empresa.html">A empresa</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="contato.html">Contato e orçamento</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Produtos</h4>
+        <ul>
+          <li><a href="produto-frango-congelado.html">Frango congelado</a></li>
+          <li><a href="produto-galinha-pesada.html">Galinha pesada</a></li>
+          <li><a href="produto-frango-resfriado.html">Frango resfriado</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="tel:+5593991637443">(93) 99163-7443</a></li>
+          <li>Diamantino, Santarém-PA</li>
+          <li><a href="contato.html">Solicitar orçamento</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-legal">
+      <span>Tapajós Alimentos Ltda. · CNPJ 06.153.245/0001-35</span>
+      <span>Fotografias ilustrativas do segmento, sob a <a href="https://unsplash.com/license" target="_blank" rel="noopener">licença Unsplash</a>. Não retratam instalações, equipe ou embalagens da empresa.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/site.js" defer></script>
+</body>
+</html>

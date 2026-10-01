@@ -1,0 +1,5 @@
+# Trocar o domínio abaixo pelo domínio final antes de publicar.
+User-agent: *
+Allow: /
+
+Sitemap: https://www.exemplo.com.br/sitemap.xml
